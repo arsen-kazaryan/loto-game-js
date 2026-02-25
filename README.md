@@ -16,3 +16,5 @@ Simple loto game built with pure JavaScript.
 ##  How to play
 Click on numbers when they appear.
 Mark all numbers to win.
+## Demo 
+https://arsen-kazaryan.github.io/loto-game-js/
