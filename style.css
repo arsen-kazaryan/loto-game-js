@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+}
+.list {
+    border: 2px solid black;
+    width: 630px;
+    height: 210px;
+    border-collapse: collapse;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.row{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+}
+
+.col {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.col.filled{
+    background-color: blue;
+}
+.col:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.figure{
+    font-size: 1.5rem;
+    color: #ff4444;
+    display: grid;
+    place-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: wheat;
+    border: 3px solid #ff4444;
+    cursor: pointer;
+}
+
+.checked{
+    display: grid;
+    grid-template-columns: repeat(5,50px);
+    gap: 1rem;
+}
+#pass-button{
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    border: 1px solid #000;
+    background-color: black;
+    color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    transition: 0.2s ease;
+    &:hover{
+        transform: scale(1.5);
+    }
+    &:active{
+        color: red;
+    }
+}
