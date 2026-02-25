@@ -5,27 +5,23 @@
 }
 body{
     position: relative;
+    padding: 20px;
 }
 .list {
     border: 2px solid black;
     width: 630px;
     height: 210px;
     border-collapse: collapse;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
 }
 
-.row{
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-}
 
-.col {
+.col{
     border: 2px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} 
+    text-align: center;
+    vertical-align: middle;
+    width: 70px;      
+    height: 70px;   
+}
 .col.filled{
     background-color: blue;
 }
@@ -43,15 +39,18 @@ body{
     background-color: wheat;
     border: 3px solid #ff4444;
     cursor: pointer;
+    &:hover{
+        opacity: 0.7;
+    }
 }
 
 .checked{
     display: grid;
-    grid-template-columns: repeat(5,50px);
+    grid-template-columns: repeat(8,50px);
     gap: 1rem;
 }
 #pass-button{
-    position: absolute;
+    position: fixed;
     top: 40%;
     left: 60%;
     border: 1px solid #000;
