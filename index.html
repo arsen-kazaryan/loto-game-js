@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loto Game</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./icon.svg">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <main class="game-wrapper">
+        <header class="game-header">
+            <div class="current-draw">
+                <span class="label">Current Number</span>
+                <div class="figure" id="current-figure">-</div>
+            </div>
+            
+            <div class="controls">
+                <button id="pass-button" class="btn-primary">Pull Next / Pass</button>
+                <button id="restart-button" class="btn-secondary hidden">Play Again 🔄</button>
+            </div>
+        </header>
+
+        <section class="game-board">
+            <table class="list" id="loto-card"></table>
+        </section>
+
+        <section class="history-board">
+            <h3 class="history-title">History</h3>
+            <div class="checked" id="checked-history"></div>
+        </section>
+    </main>
+</body>
+</html>
